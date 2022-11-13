@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [NavigationController::class,'index']);
 
 Route::get('/home', [NavigationController::class,'index']);
 
