@@ -1,0 +1,28 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+.nav-item a.nav-link {
+	color: #97BF04;
+	text-transform: capitalize;
+    transition: all 0.5s linear;
+}
+
+
+.nav-item a.nav-link:hover {
+	color: #04ADBF;
+}
+
+.nav-item {
+    font-size: 1.2em;
+  }
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }

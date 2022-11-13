@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', [NavigationController::class,'index']);
 
 Route::get('/about', function () {
     return view('about');
@@ -36,3 +35,6 @@ Route::get('/donate', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
