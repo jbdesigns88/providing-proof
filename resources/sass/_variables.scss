@@ -2,27 +2,72 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Arial', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 
+//providing-proof-colors
+$main-bg-color:#97BF04;
+
+$secondary-bg-color:#fcfcfc;
+
+$ternary-bg-color:#ffe686;
+
+
+.button-default{
+    background-color: $main-bg-color;
+    color: white;
+    font-weight: bold;
+    padding: 0.3em 0.8em;
+    cursor:pointer;
+}
+.clear-fixed-position{
+    padding: 70px 15px 0 !important;
+}
 .nav-item a.nav-link {
 	color: #97BF04;
 	text-transform: capitalize;
     transition: all 0.5s linear;
 }
 
+a{cursor: pointer;}
+
+
+.main-bg{
+    background-color: $main-bg-color;
+
+}
+
+.secondary-bg{
+    background-color: $secondary-bg-color;
+}
+
+.ternary-bg{
+    background-color: $ternary-bg-color;
+}
 
 .nav-item a.nav-link:hover {
 	color: #04ADBF;
 }
 
 .nav-item {
-    font-size: 1.2em;
+    font-size: 1.7em;
   }
 
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+  section {
+    padding: 5em 0.5em;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+  section p {
+    font-size: 1.5em;
   }

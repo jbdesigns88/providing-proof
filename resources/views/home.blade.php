@@ -25,5 +25,47 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+      
+          <section class="main-bg">
+            <div class="container">
+                <p>"You cannot change the fruits that are already hanging on the tree. You can, however, change
+                    tomorrow's fruits. But to do so, you will have to dig below the ground and strengthen the roots.”
+                    - Anonymous</p>
+            </div>
+
+          </section>
+          <section class="secondary-bg">
+            <div class="container">
+            <p>
+            Children, much like seeds, are an investment that can yield exponential return. Providing Preventative
+            Resources Often Overlooked About Finances (P.R.O.O.F.) was established to impart youth with the
+            knowledge, confidence and skills to benefit themselves and others in three ways:    
+            </p>
+            </div>
+
+    </section>
+  
+          <section class="ternary-bg">
+
+            <div class="container">
+    
+                <h2>MISSION STATEMENT</h2>
+            <p>Providing P.R.O.O.F. is an economic wealth source that situates valuation processes as the roots to sow
+                economic literacy within young people to reduce economic disparity. Providing P.R.O.O.F. operates from a
+                framework of abundance and promotes the cultivation of knowledge, the participation in investment processes,
+                the sharing of resources, and the revision of beliefs and actions to harvest transformative economic agencies and
+                diverse thriving economies that will be passed on as wealth to future generations. We establish roots of
+                sustenance and spread seeds that bear crops for long term benefits though Economically Relevant Pedagogies
+                and Critical Design frameworks; fostering the fruit of mindful transformations leading to fully realized authentic
+                individual and collective economies.
+            </p>
+            </div>
+
+
+          </section>
+          <section class="main-bg">
+          </section>
+          
     </x-slot>
   </x-layout>

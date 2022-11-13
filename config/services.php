@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'square' => [
+        'app' => env('SQ_APP_ID'),
+        'location' => env('SQ_LOCATION_ID'),
+        'token' => env('SQ_ACCESS_TOKEN')
+    ]
+
 ];

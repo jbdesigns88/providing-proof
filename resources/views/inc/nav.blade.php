@@ -8,18 +8,28 @@
 
 
 ?>
-  <div class="container-fluid">
-    <header class="d-flex flex-wrap justify-content-center py-3  border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Providing Proof</span>
-      </a>
 
-      <ul class="nav nav-pills">
-  @foreach($data as $item)
-  <li class="nav-item"><a href="{{$item['slug']}}" class="nav-link" aria-current="page">{{$item['name']}}</a></li>
 
-        @endforeach
-    </ul>
-</header>
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Providing Proof</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+   
+                @foreach($data as $item)
+                <li class="nav-item"><a href="{{$item['slug']}}" class="nav-link" aria-current="page">{{$item['name']}}</a></li>
+              
+              @endforeach
+         
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 </div>
