@@ -16,22 +16,22 @@ class PaymentController extends Controller
 
     public function createPayment(Request $request){
         $username = $request->input('data')['name'];
-        $money = new Money();
         $amount = (int)$request->input('data')['amount'];
-        $money->setAmount($amount);
-        $money->setCurrency(Currency::USD);
         $idempotency_key = uniqid($username[0],true);
         $source_id = $request->input('data')['sourceId'];
-        $location_id = $request->input('data')['locationId'];
+        $location_id = $request->input('data')['locationId'];        
+        
+        $money = $this->createMoney($amount);
         $customer = new SquareClient([
             'accessToken' => config('services.square.token'),
             'environment' => 'sandbox'
         ]);
         
         $pay = new createPaymentRequest($source_id,$idempotency_key,$money);
-        $payment = $customer->getPaymentsApi();
         $pay->setLocationId($location_id);
         $pay->setNote("Donation made by: $username ");
+        
+        $payment = $customer->getPaymentsApi();
         $payment->createPayment($pay);
         $paymentCreated = $payment->createPayment($pay);
 
@@ -39,7 +39,12 @@ class PaymentController extends Controller
 
     
     }
-    //     $pay = new square();
-    //     $pay->createPayment([]);
-    // }
+
+    public function createMoney($amount = 0){
+        $money = new Money();
+        $money->setAmount($amount);
+        $money->setCurrency(Currency::USD);
+        return $money;
+    }
+
 }
