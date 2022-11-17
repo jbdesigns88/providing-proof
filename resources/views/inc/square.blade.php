@@ -23,9 +23,9 @@
         const body = JSON.stringify({
           data:{
             locationId,
-          sourceId: token,
-          amount:amount_money,
-          name: name.value.trim()
+            sourceId: token,
+            amount:amount_money,
+            name: name.value.trim()
         }
         });
 
@@ -87,12 +87,13 @@
           throw new Error('Square.js failed to load properly');
         }
         donationAmountContainer = document.getElementById('donation');
-        cardButton = document.getElementById('card-button');
+        
         name = document.getElementById('name');
         userinfo = document.getElementById('username');
         updateDonationAmount()
         appId = document.getElementById('sq-app-id').value; //should get this form app config
          locationId = document.getElementById('sq-loc-id').value;
+         cardButton = document.getElementById('card-button');
         let payments;
         try {
           payments = window.Square.payments(appId, locationId);
