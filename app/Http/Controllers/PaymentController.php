@@ -28,9 +28,8 @@ class PaymentController extends Controller
         ]);
         
         $pay = new createPaymentRequest($source_id,$idempotency_key,$money);
-        $pay->setLocationId($location_id);
+        $pay->setLocationId(config('services.square.location'));
         $pay->setNote("Donation made by: $username ");
-        
         $payment = $customer->getPaymentsApi();
         $payment->createPayment($pay);
         $paymentCreated = $payment->createPayment($pay);
