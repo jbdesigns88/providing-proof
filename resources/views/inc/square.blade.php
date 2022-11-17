@@ -4,7 +4,13 @@
     ></script>
     <script>
 
-
+    let amount_money;
+        let appId;
+         let locationId;
+         let name;
+         let userinfo;
+         let cardButton;
+         let donationAmountContainer;
       async function initializeCard(payments) {
         const card = await payments.card();
         await card.attach('#card-container');
@@ -13,12 +19,17 @@
       }
 
       async function createPayment(token) {
+ 
         const body = JSON.stringify({
-          locationId,
+          data:{
+            locationId,
           sourceId: token,
+          amount:amount_money,
+          name: name.value.trim()
+        }
         });
 
-        const paymentResponse = await fetch('/payment', {
+        const paymentResponse = await fetch('api/payment', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -67,12 +78,21 @@
       }
 
       document.addEventListener('DOMContentLoaded', async function () {
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        });
+
         if (!window.Square) {
           throw new Error('Square.js failed to load properly');
         }
-            const appId = document.getElementById('sq-app-id').value; //should get this form app config
-         const locationId = document.getElementById('sq-loc-id').value;
-        console.log(`The application ${appId} and location ${locationId}`)
+        donationAmountContainer = document.getElementById('donation');
+        cardButton = document.getElementById('card-button');
+        name = document.getElementById('name');
+        userinfo = document.getElementById('username');
+        updateDonationAmount()
+        appId = document.getElementById('sq-app-id').value; //should get this form app config
+         locationId = document.getElementById('sq-loc-id').value;
         let payments;
         try {
           payments = window.Square.payments(appId, locationId);
@@ -112,23 +132,31 @@
           }
         }
 
-        const updateDonationAmount = () =>{
+        function updateDonationAmount(){
             cardButton.innerText = `Donate ${formatter.format(donationAmountContainer.value)}`;
-            cardButton.value = donationAmountContainer.value * 100;
+            amount_money = donationAmountContainer.value * 100;
+            cardButton.value = amount_money;
         }
 
 
-        const formatter = new Intl.NumberFormat('en-US', {
-            style: 'currency',
-            currency: 'USD',
-        });
-
-        const cardButton = document.getElementById('card-button');
+ 
+       
         cardButton.addEventListener('click', async function (event) {
+            if(name.value.length === 0 ){
+                userinfo.classList.add('activate')
+            return
+        }
           await handlePaymentMethodSubmission(event, card);
         });
 
-        let donationAmountContainer = document.getElementById('donation');
+        name.addEventListener('input',(event) => {
+            event.preventDefault();
+            userinfo.classList.toggle('activate',name.value.length === 0);
+        })
+        
+        
+        
+        
         donationAmountContainer.addEventListener('change',function(event){
             event.preventDefault();
             updateDonationAmount()

@@ -23,7 +23,7 @@
         @include('inc.nav')
 
         <main class="flex-shrink-0">
-          <div class="container-fluid clear-fixed-position">
+          <div class="container-fluid ">
             {{ $content }}
           </div>
         </main>
