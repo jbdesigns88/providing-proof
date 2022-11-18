@@ -2,9 +2,12 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Arial', sans-serif;
+$font-family-serif: 'Cardo, serif';
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+
+
 
 
 //providing-proof-colors
@@ -15,7 +18,7 @@ $secondary-bg-color:#fcfcfc;
 $ternary-bg-color:#ffe686;
 
 header {
-    min-height: 250px !important;
+    min-height: 210px !important;
   }
 .button-default{
     background-color: $main-bg-color;
@@ -57,7 +60,8 @@ a{cursor: pointer;}
 }
 
 .nav-item {
-    font-size: 1.7em;
+    font-size: 1.5em;
+    margin: 0 3em;
   }
 
 .container-fluid {
@@ -80,6 +84,13 @@ a{cursor: pointer;}
 
   #logo img{
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
   
   }
+  .navbar.navbar-expand-md.navbar-light.fixed-top.bg-light {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.footer.mt-auto.py-3.bg-light{
+    border-top: 1px solid #e2e2e2;
+}

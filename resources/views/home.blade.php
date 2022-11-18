@@ -36,15 +36,19 @@
 
           </section>
           <section class="secondary-bg">
-            <div class="container">
-            <p>
-            Children, much like seeds, are an investment that can yield exponential return. Providing Preventative
-            Resources Often Overlooked About Finances (P.R.O.O.F.) was established to impart youth with the
-            knowledge, confidence and skills to benefit themselves and others in three ways:    
-            </p>
-            </div>
-
-    </section>
+                <div class="container">
+                    <p>
+                    Children, much like seeds, are an investment that can yield exponential return. Providing Preventative
+                    Resources Often Overlooked About Finances (P.R.O.O.F.) was established to impart youth with the
+                    knowledge, confidence and skills to benefit themselves and others in three ways:    
+                    </p>
+                </div>
+                <div class="row text-primary">
+                    <div class="col-md"><div class="image_holder"><img src="" /> </div><span> improved quality of life</span></div>
+                    <div class="col-md"><div class="image_holder"><img src="" /> </div><span> Stabilize the Community</span></div>
+                    <div class="col-md"><div class="image_holder"><img src="" /> </div><span> Inspire Others</span></div>
+                </div>
+          </section>
   
           <section class="ternary-bg">
 

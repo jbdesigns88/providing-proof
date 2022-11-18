@@ -8,7 +8,16 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
-
+* {
+	font-family: 'Cardo', serif;
+	text-transform: capitalize;
+	transition: all 0.5s linear;
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
