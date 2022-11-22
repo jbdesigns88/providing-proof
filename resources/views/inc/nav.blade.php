@@ -1,7 +1,7 @@
 <?php
        $data = [
            ['name'=> 'home','slug' => '/'],
-           ['name'=> 'about','slug' => 'about'],
+           ['name'=> 'our curriculum','slug' => 'our-curriculum'],
            ['name'=> 'events','slug' => 'events'],
            ['name'=> 'donate','slug' => 'donate'],
         ];
@@ -16,8 +16,8 @@
       <div class="container-fluid">
         <div class="container"> 
         <div class ="row">
-            <div id="logo" class="col-md-4"><a href=""><img src="/images/logo.png" /></a></div>
-            <div class="col-md-8">
+            <div id="logo" class="col-md-2"><a href=""><img src="/images/logo.png" /></a></div>
+            <div class="col-md-10">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
