@@ -98,9 +98,9 @@
         try {
           payments = window.Square.payments(appId, locationId);
         } catch(error) {
-            console.log("error on request");
-            console.dir(error)
-            console.log(`appID: ${appId}, locationID: ${locationId}`)
+            // console.log("error on request");
+            // console.dir(error)
+            // console.log(`appID: ${appId}, locationID: ${locationId}`)
           const statusContainer = document.getElementById(
             'payment-status-container'
           );
