@@ -11,17 +11,31 @@ $line-height-base: 1.6;
 
 
 //providing-proof-colors
-$main-bg-color:#97BF04;
+$green-bg-color:#97BF04;
+$blue-bg-color:#134a99;
+$yellow-bg-color:#FFC311;
+$white-bg-color:#fcfcfc;
 
-$secondary-bg-color:#fcfcfc;
+.main-button{
+    background-color: $yellow-bg-color !important;
+    color: white !important;
+    border: none  !important;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
 
-$ternary-bg-color:#ffe686;
-
+}
 header {
     min-height: 210px !important;
   }
+
+  
+  .specialize {
+	font-size: 2em;
+	font-weight: bold;
+}
 .button-default{
-    background-color: $main-bg-color;
+    background-color: $green-bg-color;
     color: white;
     font-weight: bold;
     padding: 0.3em 0.8em;
@@ -42,18 +56,23 @@ header {
 a{cursor: pointer;}
 
 
-.main-bg{
-    background-color: $main-bg-color;
-
+.blue-bg-color{
+    background-color: $blue-bg-color;
+    color: white;
 }
 
-.secondary-bg{
-    background-color: $secondary-bg-color;
+.yellow-bg-color{
+    background-color: $yellow-bg-color;
+    color: white;
 }
 
-.ternary-bg{
-    background-color: $ternary-bg-color;
+.green-bg-color{
+    background-color: $green-bg-color;
+    color: white;
 }
+
+
+
 
 .nav-item a.nav-link:hover {
 	color: #04ADBF;
@@ -71,7 +90,6 @@ a{cursor: pointer;}
 
   section {
     padding: 5em 0.5em;
-    text-align: center;
   }
 
   section h2 {
@@ -81,7 +99,9 @@ a{cursor: pointer;}
     font-size: 1.5em;
     line-height: 2em;
   }
-
+  ul.core-values li{
+    margin-bottom: 2.5em;
+  }
   #logo img{
     width: 100%;
     max-width: 120px;
@@ -91,6 +111,10 @@ a{cursor: pointer;}
 	border-bottom: 1px solid #e2e2e2;
 }
 
-.footer.mt-auto.py-3.bg-light{
-    border-top: 1px solid #e2e2e2;
+footer div .nav-item a.nav-link{
+    color: white;
+}
+
+footer div ul li.nav-item{
+    margin: 0;
 }

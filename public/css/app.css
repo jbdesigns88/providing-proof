@@ -1,7 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
+.main-button {
+  background-color: #FFC311 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
 header {
   min-height: 210px !important;
+}
+
+.specialize {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .button-default {
@@ -30,16 +44,19 @@ a {
   cursor: pointer;
 }
 
-.main-bg {
+.blue-bg-color {
+  background-color: #134a99;
+  color: white;
+}
+
+.yellow-bg-color {
+  background-color: #FFC311;
+  color: white;
+}
+
+.green-bg-color {
   background-color: #97BF04;
-}
-
-.secondary-bg {
-  background-color: #fcfcfc;
-}
-
-.ternary-bg {
-  background-color: #ffe686;
+  color: white;
 }
 
 .nav-item a.nav-link:hover {
@@ -58,7 +75,6 @@ a {
 
 section {
   padding: 5em 0.5em;
-  text-align: center;
 }
 
 section h2, section .h2 {
@@ -70,6 +86,10 @@ section p {
   line-height: 2em;
 }
 
+ul.core-values li {
+  margin-bottom: 2.5em;
+}
+
 #logo img {
   width: 100%;
   max-width: 120px;
@@ -79,8 +99,12 @@ section p {
   border-bottom: 1px solid #e2e2e2;
 }
 
-.footer.mt-auto.py-3.bg-light {
-  border-top: 1px solid #e2e2e2;
+footer div .nav-item a.nav-link {
+  color: white;
+}
+
+footer div ul li.nav-item {
+  margin: 0;
 }
 
 #payment-form {
@@ -304,6 +328,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  text-align: left;
 }
 
 /**

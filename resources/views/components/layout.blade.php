@@ -32,10 +32,10 @@
         </main>
 
 
-      <footer class="footer mt-auto py-3 bg-light">
-        <div class="container" style="text-align: center">
-          <h2 class="text-primary">Proofprevails@gmail.com</h2>
-          <span class="text-muted">Providing P.R.O.O.F is a not for profit 501(c)3 oraginazion.</span>
+      <footer class="blue-bg-color mt-auto py-3">
+        <div class="container">
+          @include('inc.navigation')
+          <span class="text-muted" style="color:white !important" >Providing P.R.O.O.F is a not for profit 501(c)3 oraginazion.</span>
         </div>
       </footer>
     </body>

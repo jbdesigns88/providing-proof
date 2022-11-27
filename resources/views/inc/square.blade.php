@@ -180,7 +180,7 @@
       <div id="card-container"></div>
       <input id="sq-app-id" type="hidden" value="{{config('services.square.app')}}" />
       <input id="sq-loc-id" type="hidden" value="{{config('services.square.location')}}" />
-      <button id="card-button" class="btn btn-primary button-default" type="button">Donate $1.00</button>
+      <button id="card-button" class="main-button" type="button">Donate $1.00</button>
     </form>
     <div id="payment-status-container"></div>
  
