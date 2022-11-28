@@ -1,0 +1,120 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-serif: 'Cardo, serif';
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+
+
+
+//providing-proof-colors
+$green-bg-color:#97BF04;
+$blue-bg-color:#134a99;
+$yellow-bg-color:#FFC311;
+$white-bg-color:#fcfcfc;
+
+.main-button{
+    background-color: $yellow-bg-color !important;
+    color: white !important;
+    border: none  !important;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+
+}
+header {
+    min-height: 210px !important;
+  }
+
+  
+  .specialize {
+	font-size: 2em;
+	font-weight: bold;
+}
+.button-default{
+    background-color: $green-bg-color;
+    color: white;
+    font-weight: bold;
+    padding: 0.3em 0.8em;
+    cursor:pointer;
+}
+.clear-fixed-position{
+    padding: 70px 15px 0 !important;
+}
+#navbarCollapse {
+    padding: 5em 0;
+}
+.nav-item a.nav-link {
+	color: #97BF04;
+	text-transform: capitalize;
+    transition: all 0.5s linear;
+}
+
+a{cursor: pointer;}
+
+
+.blue-bg-color{
+    background-color: $blue-bg-color;
+    color: white;
+}
+
+.yellow-bg-color{
+    background-color: $yellow-bg-color;
+    color: white;
+}
+
+.green-bg-color{
+    background-color: $green-bg-color;
+    color: white;
+}
+
+
+
+
+.nav-item a.nav-link:hover {
+	color: #04ADBF;
+}
+
+.nav-item {
+    font-size: 1.5em;
+    margin: 0 3em;
+  }
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  section {
+    padding: 5em 0.5em;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+  section p {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  ul.core-values li{
+    margin-bottom: 2.5em;
+  }
+  #logo img{
+    width: 100%;
+    max-width: 120px;
+  
+  }
+  .navbar.navbar-expand-md.navbar-light.fixed-top.bg-light {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+footer div .nav-item a.nav-link{
+    color: white;
+}
+
+footer div ul li.nav-item{
+    margin: 0;
+}
