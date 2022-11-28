@@ -12,7 +12,7 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                        @include('inc.navigation');
+                        @include('inc.navigation')
                   </div>
             </div>
         </div>
