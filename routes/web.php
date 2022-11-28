@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [NavigationController::class,'index']);
 
-Route::get('/home', [NavigationController::class,'index']);
+
 
 Route::get('/our-curriculum', function () {
     return view('about');

@@ -1,7 +1,7 @@
 <x-layout>
   <x-slot name="content">
     <div class="container py-5">
-        <h2> About Our Curriculumn</h2> 
+        <h3 class="page-header" > About Our Curriculumn</h3> 
         <div class="row">
            <div class="col-md-12">
               <p>
@@ -19,8 +19,8 @@
         </div>
 
         <div class ="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-10">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
             <p>
               <b>Year One curriculum is Seed to Sprout.</b> Seed to Sprout curriculum is focused on
               understanding economies, the self as an economy, and ways to utilize valuation
@@ -36,8 +36,8 @@
 
 
         <div class ="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-10">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
             <p>
               <b>Year Two curriculum is Sprout to Sapling.</b> Sprout to Sapling curriculum is
               designed to increase the understanding of the range of risks, costs, and returns that
@@ -49,8 +49,8 @@
 
 
         <div class ="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-10">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
             <p>
                 <b>Year Three curriculum is Sapling to Mature Fruit.</b> Sapling to Mature Fruit
                   curriculum centers learning around barriers, volatility, and reciprocity that an
