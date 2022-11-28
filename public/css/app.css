@@ -18,6 +18,11 @@ header {
   font-weight: bold;
 }
 
+.page-header {
+  text-align: center;
+  margin-bottom: 1.3em;
+}
+
 .button-default {
   background-color: #97BF04;
   color: white;

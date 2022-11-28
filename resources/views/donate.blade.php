@@ -3,13 +3,6 @@
     <div class="container py-5">
 
       <div class="row g-5">
-        <div class="col-md-5 col-lg-4 order-md-last">
-        
-    
-
-          
-      
-        </div>
         <div class="col-md-7 col-lg-8">
           <h3 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-light bg-dark p-2" style="border-radius: 5px">Donate</span>
