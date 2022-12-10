@@ -52,10 +52,18 @@ header {
     padding: 5em 0;
 }
 .nav-item a.nav-link {
-	color: #97BF04;
-	text-transform: capitalize;
+	  color: #97BF04;
+	  text-transform: capitalize;
     transition: all 0.5s linear;
 }
+
+header .nav-item a.nav-link.specialize {
+	background-color: $yellow-bg-color;
+	color: white;
+	border-radius: 5px;
+}
+
+
 
 a{cursor: pointer;}
 

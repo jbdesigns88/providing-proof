@@ -4,6 +4,8 @@
 
       <div class="row g-5">
         <div class="col-md-7 col-lg-8">
+          <h4>Each donation brings us one step closer to bridging the divide between opportunity and youth in
+            communities of economic disparity. All proceeds are tax-deductible.</h4><br/>
           <h3 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-light bg-dark p-2" style="border-radius: 5px">Donate</span>
             <span class="donation-option badge main-bg rounded-pill button-default">$25.00</span>
