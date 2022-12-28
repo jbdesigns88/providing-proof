@@ -34,6 +34,10 @@ return [
         'app' => env('SQ_APP_ID'),
         'location' => env('SQ_LOCATION_ID'),
         'token' => env('SQ_ACCESS_TOKEN')
+    ],
+    
+    'sendgrid' => [
+        'api_key' => env('SENDGRID_API_KEY'),
     ]
 
 ];

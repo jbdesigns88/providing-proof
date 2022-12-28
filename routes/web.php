@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,8 @@ Route::get('/our-curriculum', function () {
 Route::get('/events', function () {
     return view('events');
 });
+Route::post('/send-email', [ContactController::class,"sendMail"])->name('contact.send.mail');
+
 
 Route::get('/donate', function () {
     return view('donate');
@@ -32,7 +35,7 @@ Route::get('/donate', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

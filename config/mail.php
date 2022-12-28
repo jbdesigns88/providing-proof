@@ -115,4 +115,15 @@ return [
         ],
     ],
 
+    'email' => [
+        'visitor' => [
+            'from' => env('VISITOR_FROM_EMAIL', ''),
+            'to'  => env('EMAIL_RECIPIENT', '')
+        ],
+        'support' => [
+            'from' => env('SUPPORT_FROM_EMAIL', ''),
+            'to'  => env('EMAIL_RECIPIENT', '')
+        ],
+    ]
+
 ];
