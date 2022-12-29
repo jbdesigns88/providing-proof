@@ -1,4 +1,4 @@
-<x-layout>
+{{-- <x-layout>
     <x-slot name="content">
       <div class="container py-5">
         <div class="row g-5">
@@ -62,4 +62,4 @@
 
 
 
-
+ --}}
