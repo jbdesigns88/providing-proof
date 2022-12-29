@@ -3,6 +3,7 @@
 use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,16 +27,16 @@ Route::get('/our-curriculum', function () {
 Route::get('/events', function () {
     return view('events');
 });
-Route::post('/send-email', [ContactController::class,"sendMail"])->name('contact.send.mail');
+Route::post('/send-email', [ContactController::class,"sendMail"])->middleware(ProtectAgainstSpam::class)->name('contact.send.mail');
 
 
 Route::get('/donate', function () {
     return view('donate');
 });
 
-// Route::get('/contact', function () {
-//     return view('contact');
-// })->name('contact');
-Auth::routes();
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,4 +1,4 @@
-{{-- <x-layout>
+<x-layout>
     <x-slot name="content">
       <div class="container py-5">
         <div class="row g-5">
@@ -21,6 +21,7 @@
             <h1>{{session('failed') }}</h1>
         @endif
             <form method="POST" action="{{ route('contact.send.mail') }}">
+              <x-honeypot />
               <input type="hidden" name="_token" value="{{ csrf_token() }}" />
               <div class="form-group">
                 <label for="email">Email address</label>
@@ -62,4 +63,4 @@
 
 
 
- --}}
+

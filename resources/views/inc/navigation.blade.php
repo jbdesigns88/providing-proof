@@ -2,7 +2,7 @@
            ['name'=> 'home','slug' => '/','isSpecial'=> false],
            ['name'=> 'our curriculum','slug' => 'our-curriculum','isSpecial'=> false],
            ['name'=> 'events','slug' => 'events','isSpecial'=> false],
-         //   ['name'=> 'contact','slug' => 'contact','isSpecial'=> false],
+           ['name'=> 'contact','slug' => 'contact','isSpecial'=> false],
            ['name'=> 'donate','slug' => 'donate','isSpecial'=> true],
         ];
  ?>   
