@@ -130,3 +130,20 @@ footer div .nav-item a.nav-link{
 footer div ul li.nav-item{
     margin: 0;
 }
+
+.event-name{
+padding: 5px;
+border-radius: 3px;
+font-weight: bold;
+}
+ul a{
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+ul#events-holder li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+ul#events-holder li:nth-child(even) {
+  background-color: #e0e0e0;
+}

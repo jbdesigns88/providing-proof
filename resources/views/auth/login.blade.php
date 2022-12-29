@@ -9,6 +9,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
+                        <x-honeypot />
                         @csrf
 
                         <div class="row mb-3">
