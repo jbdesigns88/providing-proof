@@ -3,6 +3,7 @@
 use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EventController;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
@@ -24,9 +25,14 @@ Route::get('/our-curriculum', function () {
     return view('about');
 });
 
-Route::get('/events', function () {
-    return view('events');
-});
+//events
+Route::get('/events', [EventController::class,'index'])->name('allEvents');
+Route::get('/events/{event}', [EventController::class,'show'])->name('getEvent');
+Route::post('/events', [EventController::class,'store'])->middleware(ProtectAgainstSpam::class)->name('events.store');
+Route::get('/create-event', function () {
+    return view('event-create');
+})->name('create-event');
+
 Route::post('/send-email', [ContactController::class,"sendMail"])->middleware(ProtectAgainstSpam::class)->name('contact.send.mail');
 
 
@@ -37,6 +43,8 @@ Route::get('/donate', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
-// Auth::routes();
+Route::middleware(ProtectAgainstSpam::class)->group(function() {
+    Auth::routes();
+});
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
